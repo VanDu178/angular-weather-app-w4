@@ -1,0 +1,10 @@
+<header class="header-container">
+    <div class="logo">🌤️ Weather App</div>
+    <nav class="nav-links">
+        <a href="/home" class="nav-item">Trang chủ</a>
+        <a href="/about" class="nav-item">Về chúng tôi</a>
+        <a *ngIf="!isLoggedIn" href="/login" class="nav-item">Đăng nhập</a>
+        <a *ngIf="isLoggedIn" (click)="logout()" class="nav-item">Đăng xuất</a>
+    </nav>
+    <div class="time">{{ currentTime }}</div>
+</header>

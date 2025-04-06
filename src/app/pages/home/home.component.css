@@ -1,0 +1,41 @@
+.main-content {
+    min-height: 100vh;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+.welcome {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.welcome p {
+    color: #666;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.city-list h3 {
+    color: #34495e;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.cities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}

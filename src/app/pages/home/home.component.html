@@ -1,0 +1,22 @@
+<main class="main-content">
+    <section class="welcome">
+        <h2>{{ title }}</h2>
+        <p>Theo dõi dự báo thời tiết chính xác và nhanh chóng.</p>
+
+        <section class="city-list">
+            <h3>Dự báo thời tiết các thành phố</h3>
+            <div class="cities-grid">
+                <app-weather-item *ngFor="let city of cities" [city]="city" [isLoggedIn]="isLoggedIn"
+                    (addToFavorites)="onAddToFavorites($event)" (removeFromFavorites)="onRemoveFromFavorites($event)">
+                </app-weather-item>
+            </div>
+        </section>
+
+        <div *ngIf="isLoggedIn">
+            <app-favorite-locations [favoriteCities]="favoriteCities"
+                (removeFromFavorites)="onRemoveFromFavorites($event)">
+            </app-favorite-locations>
+
+        </div>
+    </section>
+</main>

@@ -1,0 +1,46 @@
+.footer-container {
+    background-color: #0d47a1;
+    color: white;
+    padding: 20px 40px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  .footer-content p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .social-links a {
+    color: white;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: transform 0.2s;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.2);
+    color: #ffc107;
+  }
+  
+  /* 🔻 Responsive */
+  @media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .social-links a {
+      font-size: 22px;
+    }
+  }
+  

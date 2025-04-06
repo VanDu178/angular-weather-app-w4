@@ -1,0 +1,48 @@
+.favorite-locations {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-locations h3 {
+    color: #2980b9;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.favorite-locations ul {
+    list-style: none;
+    padding: 0;
+}
+
+.favorite-locations li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.favorite-locations li:hover {
+    background: #e9ecef;
+    transform: translateX(5px);
+}
+
+.favorite-locations button {
+    padding: 5px 15px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.favorite-locations button:hover {
+    background: #c0392b;
+}

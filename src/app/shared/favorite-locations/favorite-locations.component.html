@@ -1,0 +1,9 @@
+<section class="favorite-locations">
+    <h3>Các địa điểm yêu thích</h3>
+    <ul>
+        <li *ngFor="let city of favoriteCities">
+            {{ city.name }} - {{ city.temp }}°C
+            <button (click)="onRemoveFromFavorites(city.name)">Xóa</button>
+        </li>
+    </ul>
+</section>

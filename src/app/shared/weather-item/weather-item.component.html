@@ -1,0 +1,13 @@
+<div class="city-card">
+    <div class="city-icon">{{ city?.icon }}</div>
+    <div class="city-info">
+        <h4>{{ city?.name }}</h4>
+        <p>Nhiệt độ: {{ city?.temp }}°C</p>
+        <p>Thời tiết: {{ city?.status }}</p>
+
+        <div *ngIf="isLoggedIn">
+            <button (click)="onAddToFavorites()">Thêm yêu thích</button>
+            <button (click)="onRemoveFromFavorites()">Xóa yêu thích</button>
+        </div>
+    </div>
+</div>
